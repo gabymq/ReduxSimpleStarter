@@ -1,7 +1,7 @@
-import Firebase from 'firebase';
-import _ from 'lodash';
+//import Firebase from 'firebase';
+//import _ from 'lodash';
 import {
-    FECTH_POSTS,
+    FETCH_POSTS,
     DELETE_POST,
     CREATE_POST
 } from './types';
