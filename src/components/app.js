@@ -1,9 +1,18 @@
+import React from 'react';
 import React, { Component } from 'react';
 
-export default class App extends Component {
-  render() {
+import Posts from 'components/posts_list';
+import SelectedPostsList from 'components/selected_posts_list';
+
+export default () => {
     return (
-      <div>React simple starter</div>
+      <div>
+        <h4>Selected Posts</h4>
+        <SelectedPostsList />
+        <hr />
+        <h4>All Posts</h4>
+        <Posts />
+      </div>
     );
   }
-}
+
