@@ -6,14 +6,14 @@ import App from './components/app';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
-const domSelector = document.querySelector('.container');
-const reactApp = (
-    <Provider store={createStoreWithMiddleware(reducers)}>
+
+export const store = createStoreWithMiddleware(reducers);
+ReactDOM.render (
+    <Provider store={store}>
         <App />
     </Provider>
-);
+    , document.querySelector('container'));
 
-ReactDOM.render( reactApp , domSelector );
 
 // Create a new component. This component should produce
 // some HTML
